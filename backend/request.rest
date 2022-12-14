@@ -1,0 +1,29 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+  "name": "Algum serviçggo5",
+  "description": "Alguma descrição",
+  "price":1455300 ,
+  "image":"https://gray-ky3-prod.cdn.arcpublishing.com/resizer/4FQVTU5TSxzcvn39vgz0m1gb_fs=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/7NCXOXAWFRE6XNDYUXBCDKEMAQ.JPG" 
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/639a3aab144528e4e1be5f1f
+
+###
+DELETE  http://localhost:3000/api/services/639a3ac3144528e4e1be5f26
+
+###
+PUT  http://localhost:3000/api/services/639a3da621beb4fe65a2ebe5
+Content-Type: application/json
+
+{
+  "name": "Algum atualização",
+  "description": "Alguma descrição",
+  "price":1000 ,
+  "image":"https://gray-ky3-prod.cdn.arcpublishing.com/resizer/4FQVTU5TSxzcvn39vgz0m1gb_fs=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/7NCXOXAWFRE6XNDYUXBCDKEMAQ.JPG" 
+}
