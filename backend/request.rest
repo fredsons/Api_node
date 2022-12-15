@@ -15,7 +15,7 @@ GET http://localhost:3000/api/services
 GET http://localhost:3000/api/services/639a3aab144528e4e1be5f1f
 
 ###
-DELETE  http://localhost:3000/api/services/639a3ac3144528e4e1be5f26
+DELETE  http://localhost:3000/api/services/639b3d65a7c7a30b016a8615
 
 ###
 PUT  http://localhost:3000/api/services/639a3da621beb4fe65a2ebe5
@@ -26,4 +26,39 @@ Content-Type: application/json
   "description": "Alguma descrição",
   "price":1000 ,
   "image":"https://gray-ky3-prod.cdn.arcpublishing.com/resizer/4FQVTU5TSxzcvn39vgz0m1gb_fs=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/7NCXOXAWFRE6XNDYUXBCDKEMAQ.JPG" 
+}
+
+###
+POST   http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+        "title": "Meu evento",
+        "author":"Fred", 
+        "description":"Festa de aniversário",
+        "budget":9000, 
+        "image":"https://gray-ky3-prod.cdn.arcpublishing.com/resizer/4FQVTU5TSxzcvn39vgz0m1gb_fs=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/7NCXOXAWFRE6XNDYUXBCDKEMAQ.JPG"
+        
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/639b4b1788acd0e6c3d73524
+
+###
+DELETE  http://localhost:3000/api/parties/639a3da621beb4fe65a2ebe5
+
+###
+PUT  http://localhost:3000/api/services/639a3da621beb4fe65a2ebe5
+Content-Type: application/json
+
+{
+        "title": "Meu evento",
+        "author":"Fred", 
+        "description":"Festa de aniversário",
+        "budget":500000, 
+        "image":"https://gray-ky3-prod.cdn.arcpublishing.com/resizer/4FQVTU5TSxzcvn39vgz0m1gb_fs=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/7NCXOXAWFRE6XNDYUXBCDKEMAQ.JPG"
+        
 }
